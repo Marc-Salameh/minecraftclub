@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="minecraft_logo_icon_168974.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Join Minecraft Community</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="logaster-2020-06-image14-3.png" onclick="window.location='./index.html'">
+        <div class="topnav">
+            <a href="About.html">About</a>
+            <a class="active" href="join.html">Join Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="history.html">History</a>
+            <a href="index.html">Home</a>
+        </div>
+    </header>
+
+    <div class="form-to-fillbcg" >
+
+
+        <form action="javascript:start();" method="post" name="Form" onsubmit="formSubmit()" id="form-to-fill">
+            <h1 style="font-size: 24px; font-family: 'Courier New', Courier, monospace;">&nbsp;Hello FAN! <br />
+                &nbsp;Fill in the
+                following
+                form to receive the latest news and events about your preferred game,
+                Minecraft!
+            </h1>
+            <h2>
+                &nbsp; First name:
+                <br />
+                &nbsp; <input type="text" id="fname" name="fname" placeholder="Enter your first name" autocomplete="on"
+                    autocapitalize="on" autofocus required>
+            </h2>
+
+            <h2>
+                &nbsp; Last name:
+                <br />
+                &nbsp; <input type="text" id="lname" name="lname" placeholder="Enter your last name" autocomplete="on"
+                    autocapitalize="on" required>
+            </h2>
+
+            <h2>
+                &nbsp; Phone Number:
+                <br />
+                &nbsp; <input type="text" id="phoneNum" name="phoneNum" placeholder="Enter your phone number"
+                    autocomplete="on" autocapitalize="on" pattern="[0-9]{8}" title="8 digits number" required>
+            </h2>
+            <h2>
+                &nbsp; Email Address
+                <br />
+                &nbsp; <input type="text" id="email" name="email" placeholder="Enter your email address"
+                    autocomplete="on" autocapitalize="on" required>
+            </h2>
+
+            &nbsp;<button onsubmit="formSubmit()" class="button1">Submit Form</button>
+            <!-- <input type="submit" value="Submit Form" class="btn1" onsubmit="formSubmit()"> -->
+
+
+            <input type="reset" class="button1" Value="Reset Form">
+
+        </form>
+
+
+
+        <div id="form-filled" style="display:none;">
+          
+            <h1 class="title2">&nbsp;<b><u>Form filled, your filled informations are: </u></b></h1>
+
+            <h2>
+                &nbsp; <b class="output-head-style"> <u>First and Last Name:</u></b> <span id="fname1"> </span> <span
+                    id="lname1">
+                </span>
+            </h2>
+
+            <h2>
+                &nbsp; <b class="output-head-style"> <u>Phone Number:</u></b> <span id="usekId1"> </span>
+            </h2>
+
+            <h2>
+                &nbsp; <b class="output-head-style"> <u>Email Address:</u></b> <span id="courseCode1"> </span>
+            </h2>
+
+            &nbsp;<button type="button" class="button1" onclick="reviewForm()">Review Form</button>
+            <br />
+            <br/>
+            <h1> Thank You for being a loyal fan!</h1>
+
+
+        </div>
+
+    </div>
+
+    <script src="./form.js"> </script>
+
+
+    <footer>
+        <br />
+        <ul style="display: flex; flex-direction: row;">
+            <section class="homemenu" style="font-size: 17px;">
+                <a style="color:#202020" href="index.html">Home</a> &nbsp; &nbsp; &nbsp;
+                <a style="color:#202020" href="history.html">History</a> &nbsp; &nbsp; &nbsp;
+                <a style="color:#202020" href="gallery.html">Gallery</a> &nbsp; &nbsp; &nbsp;
+                <a style="color:#202020" href="join.html">Join Us</a> &nbsp; &nbsp; &nbsp;
+                <a style="color:#202020" href="About.html">About</a>
+
+        </ul>
+        </section>
+
+        <h3>© This website is intended for learning purposes only as part of the IEEE - UL Development Course.
+            <br />
+            Powered by Marc Salameh | All rights reserved © 2023
+        </h3>
+    </footer>
+
+
+</body>
+
+</html>

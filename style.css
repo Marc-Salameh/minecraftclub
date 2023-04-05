@@ -1,0 +1,269 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
+header {
+    height: 3cm;
+    background: #52a435;
+    color: white;
+    text-align: center;
+
+
+}
+
+
+
+body {
+    background: #202020;
+    color: white;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.logo {
+    width: 7cm;
+    margin: -20px;
+}
+
+footer {
+    height: auto;
+    background: #52a435;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer.a {
+    color: white;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+
+    background-color: #202020;
+    overflow: hidden;
+    margin-top: -81px;
+    margin-right: 20px;
+    margin-left: 28.6cm;
+    border-radius: 0%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #52a435;
+    color: white;
+}
+
+.welcome_msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(minecraft-anchor.webp);
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.form-to-fillbcg {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url(CROPPED-52K7sgnQLSJ8ggfyfvz9yB.jpg);
+
+}
+
+.form-to-fillbcg1 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url(CROPPED-52K7sgnQLSJ8ggfyfvz9yB.jpg);
+
+}
+
+.welcome_msg1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(Minecraft.webp);
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.button1 {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #52a435;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #8b8b8b;
+}
+
+.button1:hover {
+    background-color: #3e8e41
+}
+
+.button1:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #b9b8b8;
+    transform: translateY(4px);
+}
+
+.button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button1:hover span {
+    padding-right: 25px;
+}
+
+.button1:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.history_msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+p.text1::first-letter {
+    color: #52a435;
+    float: left;
+    font-size: 4em;
+    margin: 0 .1em 0 0;
+    line-height: 0.85;
+    font-weight: bolder;
+}
+
+.photo_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+
+
+input[type="text"] {
+    width: 32.1%;
+}
+
+input {
+    font-size: 20px;
+    border: 2px solid #52a435;
+}
+
+input[type=text] {
+    transition: width 0.4s ease-in-out;
+
+}
+
+input[type=text]:focus {
+    width: 50%;
+    background-color: #52a435;
+    color: white;
+}
+
+
+
+.output-head-style {
+    font-size: 27px;
+    font-family: "Trirong", sans-serif;
+}
+
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #52a435;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 30px;
+}
+
+#myBtn:hover {
+    background-color: whitesmoke;
+    color: #52a435;
+    font-weight: bold;
+}
+
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+

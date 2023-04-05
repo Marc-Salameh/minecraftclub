@@ -1,0 +1,601 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
+header {
+    height: 3cm;
+    background: #52a435;
+    color: white;
+    text-align: center;
+
+
+}
+
+
+
+body {
+    background: #202020;
+    color: white;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.logo {
+    width: 7cm;
+    margin: -20px;
+}
+
+footer {
+    height: auto;
+    background: #52a435;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer.a {
+    color: white;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+
+    background-color: #202020;
+    overflow: hidden;
+    margin-top: -81px;
+    margin-right: 20px;
+    margin-left: 28.6cm;
+    border-radius: 0%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #52a435;
+    color: white;
+}
+
+.welcome_msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(minecraft-anchor.webp);
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.form-to-fillbcg {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url(CROPPED-52K7sgnQLSJ8ggfyfvz9yB.jpg);
+
+}
+
+.form-to-fillbcg1 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url(CROPPED-52K7sgnQLSJ8ggfyfvz9yB.jpg);
+
+}
+
+.welcome_msg1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(Minecraft.webp);
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.button1 {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #52a435;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #8b8b8b;
+}
+
+.button1:hover {
+    background-color: #3e8e41
+}
+
+.button1:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #b9b8b8;
+    transform: translateY(4px);
+}
+
+.button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button1:hover span {
+    padding-right: 25px;
+}
+
+.button1:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.history_msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+p.text1::first-letter {
+    color: #52a435;
+    float: left;
+    font-size: 4em;
+    margin: 0 .1em 0 0;
+    line-height: 0.85;
+    font-weight: bolder;
+}
+
+.photo_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+
+
+input[type="text"] {
+    width: 32.1%;
+}
+
+input {
+    font-size: 20px;
+    border: 2px solid #52a435;
+}
+
+input[type=text] {
+    transition: width 0.4s ease-in-out;
+
+}
+
+input[type=text]:focus {
+    width: 50%;
+    background-color: #52a435;
+    color: white;
+}
+
+
+
+.output-head-style {
+    font-size: 27px;
+    font-family: "Trirong", sans-serif;
+}
+
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #52a435;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 30px;
+}
+
+#myBtn:hover {
+    background-color: whitesmoke;
+    color: #52a435;
+    font-weight: bold;
+}
+
+.title2 {
+    text-align: center;
+    font-family: "Trirong", sans-serif;
+}
+
+.title1 {
+    position: relative;
+    top: -2.7cm;
+    left: 2cm;
+    text-align: center;
+    font-family: "Trirong", sans-serif;
+
+}
+
+
+
+
+
+#text {
+    font-size: 20px;
+}
+
+
+
+#footer1 {
+    text-align: center;
+
+}
+
+#textfooter {
+    position: relative;
+    top: 2cm;
+}
+
+.title4 {
+    font-family: "Trirong", serif;
+    margin-bottom: -13px;
+}
+
+
+#title {
+    position: relative;
+    top: -2.7cm;
+    /* left: 2cm; */
+    text-align: center;
+    font-family: "Trirong", sans-serif;
+
+}
+
+
+
+.foot1 {
+    background: #52a435;
+    color: white;
+    height: 7cm;
+    text-align: center;
+}
+
+#text {
+    font-size: 20px;
+}
+
+
+.title2 {
+    text-align: center;
+    font-family: "Trirong", sans-serif;
+}
+
+.title1 {
+    position: relative;
+    top: -2.7cm;
+    left: 2cm;
+    text-align: center;
+    font-family: "Trirong", sans-serif;
+
+}
+
+
+#text {
+    font-size: 20px;
+}
+
+
+
+#textfooter {
+    position: relative;
+    top: 2cm;
+}
+
+.foot2 {
+    font-size: 25px;
+}
+
+.title4 {
+    font-family: "Trirong", serif;
+    margin-bottom: -13px;
+}
+
+.title5 {
+    font-size: 35px;
+    text-align: center;
+    font-family: "Trirong", sans-serif;
+}
+
+.img1 {
+    float: right;
+    width: 45%;
+    height: 45%;
+}
+
+.img2 {
+    position: static;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img3 {
+    position: static;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img4 {
+    position: static;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img5 {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr {
+    border-width: thick;
+}
+
+
+table,
+th,
+td {
+    border: 1px solid black;
+    height: 40px;
+    font-size: 1.2em;
+    font-family: "Trirong", sans-serif;
+}
+
+tr:hover {
+    background-color: #52a435;
+    color: white;
+}
+
+th {
+    background-color: #52a435;
+    color: white;
+    font-weight: bolder;
+}
+
+.classTime {
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+.title6 {
+    position: relative;
+    top: -3.9cm;
+    text-align: center;
+    font-family: "Trirong", sans-serif;
+
+}
+
+.title7 {
+    position: relative;
+    top: -4.9cm;
+    text-align: center;
+    font-family: "Trirong", sans-serif;
+}
+
+.hr1 {
+    position: relative;
+    top: -0.5cm;
+}
+
+.hr2 {
+    position: relative;
+    top: -0.4cm;
+}
+
+.img6 {
+    height: 3cm;
+    width: 3cm;
+    position: relative;
+    top: -0.6cm;
+}
+
+.text1 {
+    position: relative;
+    width: 10000px;
+    height: 200px;
+    top: -4.6cm;
+    font-size: 20px;
+    font-family: "Trirong", sans-serif;
+
+}
+
+p.text1::first-letter {
+    color: #52a435;
+    float: left;
+    font-size: 2.7em;
+    margin: 0 .1em 0 0;
+    line-height: 0.85;
+    font-weight: bolder;
+}
+
+.text2 {
+    position: relative;
+    top: -8.4cm;
+    font-size: 20px;
+    font-family: "Trirong", sans-serif;
+    float: right;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.text3 {
+    position: relative;
+    top: -5.2cm;
+    font-size: 20px;
+    font-family: "Trirong", sans-serif;
+
+
+
+}
+
+.list2 {
+    position: relative;
+    top: -1.3cm;
+    right: -4.8cm;
+    font-size: 20px;
+    font-family: "Trirong", sans-serif;
+}
+
+.title8 {
+    position: relative;
+    top: 1cm;
+    right: -8.3cm;
+    font-size: 20px;
+    font-family: "Trirong", sans-serif;
+}
+
+.list3 {
+
+    position: relative;
+    top: 1.5cm;
+    right: -13.5cm;
+    font-size: 20px;
+    font-family: "Trirong", sans-serif;
+}
+
+.button3 {
+    position: relative;
+    top: -5cm;
+    /* right: -13.5cm; */
+}
+
+.imgarab {
+    float: left;
+    width: 30%;
+}
+
+.titlearab {
+    font-size: 45px;
+    font-family: "Trirong", sans-serif;
+}
+
+.arab2 {
+    font-size: 20px;
+    font-family: "Trirong", sans-serif;
+    text-align: right;
+    font-weight: bolder;
+    font: italic;
+}
+
+.arab1 {
+    font-size: 22px;
+    text-align: right;
+}
+
+
+.container {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+}
+
+.imgarab {
+    display: block;
+    width: 150%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 130%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.photo1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+}

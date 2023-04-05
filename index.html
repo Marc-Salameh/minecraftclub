@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="minecraft_logo_icon_168974.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Minecraft Fan Club - HomePage</title>
+</head>
+
+<body>
+    <header>
+
+        <img class="logo" src="logaster-2020-06-image14-3.png" onclick="window.location='./index.html'">
+        <div class="topnav">
+            <a href="About.html">About</a>
+            <a href="join.html">Join Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="history.html">History</a>
+            <a class="active" href="index.html">Home</a>
+        </div>
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8682;</button>
+
+
+    <section class="welcome_msg">
+        <h1 style="font-size: 50px; font-family: 'Courier New', Courier, monospace;"> Welcome to Minecraft Fan Club!
+        </h1>
+        <h2 style="font-size: 30px; font-family: 'Courier New', Courier, monospace;">Join us and enjoy the best gaming
+            experience</h2>
+        <button class="button1" onclick="window.location='./join.html'"><span>Join Now </span></button>
+
+    </section>
+
+    <section class="history_msg">
+
+        <h1 style="font-size: 50px; font-family: 'Courier New', Courier, monospace;">What is Minecraft?</h1>
+        <h5 style="font-size: 25px; font-family:monospace;">Minecraft is a sandbox game developed by Mojang Studios. The
+            game was created by Markus "Notch" Persson in
+            the Java programming language. Following several early private testing versions, it was first made public in
+            May 2009 before being fully released in November 2011, with Notch stepping down and Jens "Jeb" Bergensten
+            taking over development. Minecraft is the best-selling video game in history, with over 238 million copies
+            sold and nearly 140 million monthly active players as of 2021 and has been ported to several platforms. In
+            Minecraft, players explore a blocky, procedurally generated, three-dimensional world with virtually infinite
+            terrain and may discover and extract raw materials, craft tools and items, and build structures, earthworks,
+            and machines. Depending on their chosen game mode, players can fight hostile mobs, as well as cooperate with
+            or compete against other players in the same world. Game modes include a survival mode (in which players
+            must acquire resources to build in the world and maintain health) and a creative mode (in which players have
+            unlimited resources and access to flight)...</h5>
+        <button class="button1" onclick="window.location='./history.html';"> <span>Read more </span></button>
+        <br>
+        <br>
+    </section>
+
+    <section class="welcome_msg1">
+        <h1 style="font-size: 50px; font-family: 'Courier New', Courier, monospace;"> Minecraft Photo Gallery
+        </h1>
+        <h2 style="font-size: 30px; font-family: 'Courier New', Courier, monospace;">Enjoy a variety of minecraft
+            pictures only designed for fans</h2>
+        <button class="button1" onclick="window.location='./gallery.html'"><span>View Gallery </span></button>
+
+    </section>
+
+
+    <section>
+        <div class="form-to-fillbcg1">
+            <h1 style="font-size: 50px; font-family: 'Courier New', Courier, monospace; text-align: center;">Join Us
+            </h1>
+
+            <form action="javascript:start();" method="post" name="Form" onsubmit="formSubmit()" id="form-to-fill">
+                <h1 style="font-size: 24px; font-family: 'Courier New', Courier, monospace;">&nbsp;Hello FAN! <br />
+                    &nbsp;Fill in the
+                    following
+                    form to receive the latest news and events about your preferred game,
+                    Minecraft!
+                </h1>
+                <h2>
+                    &nbsp; First name:
+                    <br />
+                    &nbsp; <input type="text" id="fname" name="fname" placeholder="Enter your first name"
+                        autocomplete="on" autocapitalize="on" required>
+                </h2>
+
+                <h2>
+                    &nbsp; Last name:
+                    <br />
+                    &nbsp; <input type="text" id="lname" name="lname" placeholder="Enter your last name"
+                        autocomplete="on" autocapitalize="on" required>
+                </h2>
+
+                <h2>
+                    &nbsp; Phone Number:
+                    <br />
+                    &nbsp; <input type="text" id="phoneNum" name="phoneNum" placeholder="Enter your phone number"
+                        autocomplete="on" autocapitalize="on" pattern="[0-9]{8}" title="8 digits number" required>
+                </h2>
+                <h2>
+                    &nbsp; Email Address
+                    <br />
+                    &nbsp; <input type="text" id="email" name="email" placeholder="Enter your email address"
+                        autocomplete="on" autocapitalize="on" required>
+                </h2>
+
+                &nbsp;<button onsubmit="formSubmit()" class="button1">Submit Form</button>
+                <!-- <input type="submit" value="Submit Form" class="btn1" onsubmit="formSubmit()"> -->
+
+
+                <input type="reset" class="button1" Value="Reset Form">
+
+            </form>
+
+
+
+            <div id="form-filled" style="display:none;">
+
+                <h1 class="title2">&nbsp;<b><u>Form filled, your filled informations are: </u></b></h1>
+
+                <h2>
+                    &nbsp; <b class="output-head-style"> <u>First and Last Name:</u></b> <span id="fname1"> </span>
+                    <span id="lname1">
+                    </span>
+                </h2>
+
+                <h2>
+                    &nbsp; <b class="output-head-style"> <u>Phone Number:</u></b> <span id="usekId1"> </span>
+                </h2>
+
+                <h2>
+                    &nbsp; <b class="output-head-style"> <u>Email Address:</u></b> <span id="courseCode1"> </span>
+                </h2>
+
+                &nbsp;<button type="button" class="button1" onclick="reviewForm()">Review Form</button>
+                <br />
+                <br />
+                &nbsp;<h1 style="font-size: 24px; font-family: 'Courier New', Courier, monospace;">  &nbsp;Thank You for being
+                    a loyal fan!</h1>
+
+
+            </div>
+            <br />
+            <br />
+        </div>
+
+        <script src="./form.js"> </script>
+    </section>
+
+    <section class="aboutus">
+        <h1 style="font-size: 50px; font-family: 'Courier New', Courier, monospace;"> About Us
+        </h1>
+        <h2 style="font-size: 25px; font-family: 'Courier New', Courier, monospace;">Know more about our Head of
+            our Minecraft Club Community and get in touch for any inquiry</h2>
+        <button class="button1" onclick="window.location='./About.html'"><span>About Us </span></button>
+        <br>
+        <br>
+    </section>
+
+
+
+
+
+
+
+    <footer>
+        <br />
+        <ul style="display: flex; flex-direction: row;">
+            <section class="homemenu" style="font-size: 17px;">
+                <a style="color:#202020" href="index.html">Home</a> &nbsp; &nbsp; &nbsp;
+                <a style="color:#202020" href="history.html">History</a> &nbsp; &nbsp; &nbsp;
+                <a style="color:#202020" href="gallery.html">Gallery</a> &nbsp; &nbsp; &nbsp;
+                <a style="color:#202020" href="join.html">Join Us</a> &nbsp; &nbsp; &nbsp;
+                <a style="color:#202020" href="About.html">About</a>
+
+        </ul>
+        </section>
+        <h3>© This website is intended for learning purposes only as part of the IEEE - UL Development Course.
+            <br />
+            Powered by Marc Salameh | All rights reserved © 2023
+        </h3>
+    </footer>
+</body>
+
+</html>
