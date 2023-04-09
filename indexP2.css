@@ -52,38 +52,36 @@ footer.a {
     color: white;
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
-
-    background-color: #202020;
-    overflow: hidden;
-    margin-top: -81px;
-    margin-right: 20px;
-    margin-left: 28.6cm;
-    border-radius: 0%;
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: right;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
     text-decoration: none;
     font-size: 17px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
+.navbar a:hover {
+    background-color: #000;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
+.active {
     background-color: #52a435;
-    color: white;
 }
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}
+
+
 
 .welcome_msg {
     display: flex;
@@ -362,6 +360,7 @@ input[type=text]:focus {
     font-size: 35px;
     text-align: center;
     font-family: "Trirong", sans-serif;
+    padding-top: 30px;
 }
 
 .img1 {
@@ -434,7 +433,7 @@ th {
 
 .title6 {
     position: relative;
-    top: -3.9cm;
+    top: -5cm;
     text-align: center;
     font-family: "Trirong", sans-serif;
 
@@ -442,7 +441,7 @@ th {
 
 .title7 {
     position: relative;
-    top: -4.9cm;
+    top: -5.7cm;
     text-align: center;
     font-family: "Trirong", sans-serif;
 }
@@ -461,7 +460,7 @@ th {
     height: 3cm;
     width: 3cm;
     position: relative;
-    top: -0.6cm;
+    top: -0.5cm;
 }
 
 .text1 {

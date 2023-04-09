@@ -4,7 +4,7 @@ html {
 }
 
 header {
-    height: 3cm;
+    height: fit-content;
     background: #52a435;
     color: white;
     text-align: center;
@@ -52,37 +52,35 @@ footer.a {
     color: white;
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
 
-    background-color: #202020;
-    overflow: hidden;
-    margin-top: -81px;
-    margin-right: 20px;
-    margin-left: 28.6cm;
-    border-radius: 0%;
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+ 
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: right;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-    background-color: #52a435;
+.navbar a {
+    float: left;
+    padding: 12px;
     color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #52a435;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
 }
 
 .welcome_msg {
@@ -266,4 +264,3 @@ input[type=text]:focus {
     align-items: center;
     justify-content: center;
 }
-
